@@ -83,11 +83,11 @@ a:focus {
 
 @font-face {
     font-family: 'icomoon';
-    src:    url('../fonts/icomoon.eot?jkbsiw');
-    src:    url('../fonts/icomoon.eot?jkbsiw#iefix') format('embedded-opentype'),
-        url('../fonts/icomoon.ttf?jkbsiw') format('truetype'),
-        url('../fonts/icomoon.woff?jkbsiw') format('woff'),
-        url('../fonts/icomoon.svg?jkbsiw#icomoon') format('svg');
+    src:    url('../fonts/icomoon.eot?hac3uh');
+    src:    url('../fonts/icomoon.eot?hac3uh#iefix') format('embedded-opentype'),
+        url('../fonts/icomoon.ttf?hac3uh') format('truetype'),
+        url('../fonts/icomoon.woff?hac3uh') format('woff'),
+        url('../fonts/icomoon.svg?hac3uh#icomoon') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -142,6 +142,9 @@ a:focus {
 }
 .icon-phone:before {
     content: "\f095";
+}
+.icon-scissors:before {
+    content: "\f0c4";
 }
 
 /* ==========================================================================
@@ -259,6 +262,10 @@ header nav ul li a:hover::before {
     margin-bottom: 2rem;
 }
 
+.welcome p + p {
+    margin-top: 2rem;
+}
+
 .services .container {
     overflow: hidden;
 }
@@ -308,6 +315,72 @@ header nav ul li a:hover::before {
 .services .service .content a {
     color: rgb(28, 29, 33);
     text-decoration: none;
+}
+
+.coupons .container {
+    overflow: hidden;
+}
+
+.coupons h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: rgb(0, 0, 0);
+}
+
+.coupons p {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.coupons .coupon {
+    width: 25%;
+    height: 100px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    float: left;
+    margin-bottom: 2rem;
+}
+
+.coupons .coupon-inner {
+    border: 3px dashed #ccc;
+    padding: 10px;
+    height: 100%;
+    position: relative;
+}
+
+.coupons .coupon-inner:before {
+    content: "\f0c4";
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    font-size: 1.5rem;
+    position: absolute;
+    left: 1.1rem;
+    bottom: -0.75rem;
+    background: rgb(255, 255, 255);
+    z-index: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.coupons .coupon-inner div {
+    text-align: center;
+}
+
+.coupons .coupon-inner .title {
+    color: rgb(0, 0, 0);
+    font-size: 1.5rem;
+}
+
+.coupons .coupon-inner .tos {
+    color: rgb(152, 152, 152);
+    font-size: 0.8rem;
 }
 
 footer {
