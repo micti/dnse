@@ -156,8 +156,16 @@ ul {
    ========================================================================== */
 
 .container {
-   width: 1180px;
-   margin: 0px auto;
+    width: 1180px;
+    margin: 0px auto;
+}
+
+@media only screen and (max-width: 1179px) {
+    .container {
+        width: 100%;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
 }
 
 .grid {
@@ -249,6 +257,21 @@ header nav ul li a:hover::before {
     transform: scale(1, 1);
 }
 
+@media only screen and (max-width: 400px) {
+    header nav ul li {
+        font-size: 0.9rem;
+    }
+    header nav ul li + li {
+        margin-left: 0.3rem;
+    }
+}
+
+@media only screen and (max-width: 580px) {
+    header nav ul li + li {
+        margin-left: 0.6rem;
+    }
+}
+
 .slide {
     margin-bottom: 3rem;
 }
@@ -281,6 +304,7 @@ header nav ul li a:hover::before {
 
 .welcome .container {
     width: 60%;
+    margin: 0 auto;
 }
 
 .welcome h1 {
@@ -291,6 +315,12 @@ header nav ul li a:hover::before {
 
 .welcome p + p {
     margin-top: 2rem;
+}
+
+@media only screen and (max-width: 700px) {
+    .welcome .container {
+        width: 100%;
+    }
 }
 
 .services .container {
@@ -342,6 +372,13 @@ header nav ul li a:hover::before {
 .services .service .content a {
     color: rgb(28, 29, 33);
     text-decoration: none;
+}
+
+@media only screen and (max-width: 700px) {
+    .services .service {
+        width: 50%;
+        margin-bottom: 2rem;
+    }
 }
 
 .coupons .container {
@@ -408,6 +445,46 @@ header nav ul li a:hover::before {
 .coupons .coupon-inner .tos {
     color: rgb(152, 152, 152);
     font-size: 0.8rem;
+}
+
+@media only screen and (max-width: 579px) {
+    .coupons .container {
+        width: 275px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .coupons .coupon {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 580px) and (max-width: 814px) {
+    .coupons .container {
+        width: 580px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .coupons .coupon {
+        width: 50%;
+    }
+}
+
+@media only screen and (min-width: 815px) and (max-width: 1179px) {
+    .coupons .container {
+        width: 815px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .coupons .coupon {
+        width: 33.333333%;
+    }
+}
+
+.service-detail {
+    position: relative;
 }
 
 .service-detail + .service-detail {
@@ -542,6 +619,34 @@ header nav ul li a:hover::before {
     min-height: 400px;
 }
 
+@media only screen and (max-width: 750px) {
+    .service-detail .content, .service-detail .photo {
+        float: none !important;
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 750px) and (max-width: 970px) {
+    .service-detail .content {
+        width: 60%;
+        z-index: 1;
+    }
+
+    .service-detail .photo {
+        position: absolute;
+        left: 1rem;
+        top: 8rem;
+        width: 60%;
+        z-index: -1;
+        float: none;
+    }
+
+    .service-detail.reversed .photo {
+        right: 1rem !important;
+        left: auto;
+    }
+}
+
 .gallery .photo {
     width: 25%;
     padding-left: 1rem;
@@ -554,6 +659,24 @@ header nav ul li a:hover::before {
 
 .gallery .photo .display img {
     width: 100%;
+}
+
+@media only screen and (max-width: 400px) {
+    .gallery .photo {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 401px) and (max-width: 700px) {
+    .gallery .photo {
+        width: 50%;
+    }
+}
+
+@media only screen and (min-width: 701px) and (max-width: 1000px) {
+    .gallery .photo {
+        width: 33.3333%;
+    }
 }
 
 footer {
@@ -639,7 +762,50 @@ footer .last .payment {
     float: right;
 }
 
+@media only screen and (max-width: 495px) {
+    footer nav ul li + li {
+        margin-left: 0.2rem;
+    }
+}
 
+@media only screen and (max-width: 750px) {
+    footer nav ul li + li {
+        margin-left: 1rem;
+    }
+}
+
+@media only screen and (max-width: 920px) {
+    footer .nav {
+        text-align: center;
+    }
+    footer .title, footer nav {
+        float: none;
+        width: 100%;
+    }
+
+    footer .title {
+        margin-bottom: 1rem;
+    }
+
+    footer nav ul li {
+        float: none;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    footer .last {
+        text-align: center;
+    }
+
+    footer .last .contact, footer .last .payment {
+        float: none;
+        width: 100%;
+    }
+
+    footer .last .contact {
+        margin-bottom: 1rem;
+    }
+}
 
 
 
@@ -725,7 +891,9 @@ footer .last .payment {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
+
+
+@media only screen and (min-width: 320px) {
     /* Style adjustments for viewports that meet the condition */
 }
 
