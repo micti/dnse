@@ -81,6 +81,10 @@ a:focus {
     outline: none;
 }
 
+ul {
+    list-style: none;
+}
+
 @font-face {
     font-family: 'icomoon';
     src:    url('../fonts/icomoon.eot?hac3uh');
@@ -381,6 +385,129 @@ header nav ul li a:hover::before {
 .coupons .coupon-inner .tos {
     color: rgb(152, 152, 152);
     font-size: 0.8rem;
+}
+
+.service-detail + .service-detail {
+    margin-top: 5rem;
+}
+
+.service-detail h1 {
+    color: rgb(0, 0, 0);
+    font-size: 1.5rem;
+    margin-bottom: 3rem;
+    text-align: center;
+    padding-top: 3rem;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.service-detail h1::before {
+    display: block;
+    content: '';
+    height: 3px;
+    width: 50px;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    /*top: 1rem;*/
+    transform: translate3d(-50%, 0, 0);
+    background: rgb(152, 152, 152);
+}
+
+.service-detail .photo {
+    float: left;
+    width: 48%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    overflow: hidden;
+}
+
+.service-detail .content {
+    margin-top: 2rem;
+    float: right;
+    width: 48%;
+    background-color: rgb(250, 250, 250);
+    padding: 2rem;
+}
+
+.service-detail.reversed .photo {
+    float: right;
+}
+
+.service-detail.reversed .content {
+    float: left;
+}
+
+.service-detail .content .item {
+    position: relative;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid rgb(232, 232, 232);
+    margin-bottom: 2rem;
+}
+
+.service-detail .content .item .s-price {
+    position: absolute;
+    right: 0;
+    top: 0;
+    text-align: right;
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.service-detail .content h2 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+.service-detail .content ul + h2 {
+    margin-top: 2rem;
+}
+
+.service-detail .content ul li {
+    padding-bottom: 0.7rem;
+    border-bottom: 1px solid rgb(232, 232, 232);
+    margin-bottom: 0.7rem;
+}
+
+.service-detail .content ul li .s-title {
+    display: block;
+    float: left;
+    width: 50%;
+}
+
+.service-detail .content ul li .s-price {
+    display: block;
+    float: right;
+    width: 50%;
+    text-align: right;
+}
+
+.service-detail.nail .photo {
+    background-image: url(../img/service-1.jpg);
+    height: 400px;
+}
+
+.service-detail.nail .content {
+    min-height: 400px;
+}
+
+.service-detail.pedicure .photo {
+    background-image: url(../img/service-2.jpg);
+    height: 500px;
+}
+
+.service-detail.pedicure .content {
+    min-height: 500px;
+}
+
+.service-detail.waxing .photo {
+    background-image: url(../img/service-4.jpg);
+    height: 400px;
+}
+
+.service-detail.waxing .content {
+    min-height: 400px;
 }
 
 footer {
