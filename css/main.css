@@ -415,6 +415,7 @@ footer nav ul li {
     font-weight: 700;
     font-size: 0.9rem;
     font-family: 'Roboto Condensed', 'Roboto', sans-serif;
+    line-height: 1;
 }
 
 footer nav ul li + li {
