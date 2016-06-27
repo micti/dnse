@@ -732,13 +732,17 @@ header nav ul li a:hover::before {
 
 .site_modal {
     position: static;
-    width: 800px;
-    margin: 60px auto;
+    width: 100%;
+    height: 100%;
+    margin: auto auto;
     background: #ffffff;
-    box-shadow: 0px 1px 2px rgba(34, 25, 25, 0.4);
+    /*box-shadow: 0px 1px 2px rgba(34, 25, 25, 0.4);*/
     padding: 20px;
     cursor: default;
     z-index: 201;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 body.has_overlay {
@@ -753,7 +757,16 @@ body.has_overlay {
     margin-bottom: 20px;
 }
 
-.modal_photo_item .photo_preview img {
+.modal_photo_item .close {
+    position: absolute;
+    top: 0px;
+    right: 10px;
+    width: 40px;
+    padding-top: 20px;
+    background-color: #fff;
+}
+
+.modal_photo_item .close img {
     width: 100%;
 }
 
