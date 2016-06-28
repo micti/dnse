@@ -6,7 +6,7 @@ $(document).ready(function () {
         $('.modal_photo_item').css('background-image', '')
     })
 
-    $('.photo').on('click', function(e) {
+    $('.gallery .photo').on('click', function(e) {
         e.preventDefault()
         $('body').addClass('has_overlay')
         $('.modal_photo_item').css('background-image', 'url(' + $(this).data('large') + ')')
